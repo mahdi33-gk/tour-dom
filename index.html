@@ -10,6 +10,9 @@
         li{
             color: green;
         }
+        .item-color{
+            color: blanchedalmond;
+        }
     </style>
 </head>
 <body>
@@ -27,9 +30,9 @@
     <section>
         <h3 id="item-name">riobruhj</h3>
         <ul>
-            <li>hey</li>
-            <li>goru</li>
-            <li>cat</li>
+            <li class="item-color">hey</li>
+            <li class="item-color">goru</li>
+            <li class="item-color">cat</li>
             <li>dog</li>
             <li>liom</li>
         </ul>
@@ -67,6 +70,11 @@
         for(let item2 of allHeading){
             console.log(item2.innerText);
         }
+        const looping = document.getElementsByClassName('item-color');
+        for(const item of looping){
+            console.log(item.innerText);
+        }
+
     </script>
     <script src="dom.js"></script>
 </body>
