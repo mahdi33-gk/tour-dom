@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        li{
+            color: green;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Hello javascript</h1>
     <h1>Hello jann</h1>
+
+    <ul>
+        <li>hey</li>
+        <li>hoi</li>
+        <li>hi</li>
+        <li>hello</li>
+    </ul>
     <h1>Hello </h1>
+    <script>
+        const findsomething = document.getElementsByTagName('li');
+        for(let item of findsomething){
+            console.log(item.innerText);
+        }
+
+        const allHeading = document.getElementsByTagName('h1');
+        for(let item2 of allHeading){
+            console.log(item2.innerText);
+        }
+    </script>
     <script src="dom.js"></script>
 </body>
 </html>
